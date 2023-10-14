@@ -49,10 +49,10 @@ function App() {
             <div id="mc_embed_signup_scroll"><h2>Daily Cat Pictures!</h2>
                   <div class="mc-field-group"><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" value="" required=""/></div>
               <div id="mce-responses" class="clear foot">
-                  <div class="response" id="mce-error-response" style="display: none;"></div>
-                  <div class="response" id="mce-success-response" style="display: none;"></div>
+                  <div class="response" id="mce-error-response" style={{display: 'none'}}></div>
+                  <div class="response" id="mce-success-response" style={{display: 'none'}}></div>
               </div>
-              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+              <div aria-hidden="true" style={{position: 'absolute', left: -5000 + 'px'}}>
                 /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
                 <input type="text" name="b_fc6ebe6bcd2470dd0224131ac_21621326dd" tabindex="-1" value=""/>
               </div>
