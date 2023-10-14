@@ -12,6 +12,7 @@ $.ajax({
     contentType: 'application/json',
     success: function(result) {
         document.getElementById("quote").innerHTML = result[0].quote;
+        document.getElementById("author").innerHTML = "-" + result[0].author;
     },
     error: function ajaxError(jqXHR) {
         console.error('Error: ', jqXHR.responseText);
@@ -40,6 +41,7 @@ function App() {
         <h1>Catss!</h1>
         <h3 id="quote"></h3>
         <img id="cat" src="" width="500px" height="500ox" />
+        <h6 id="author"></h6>
       </header>
     </div>
   );
