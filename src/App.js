@@ -43,7 +43,30 @@ function App() {
         <img id="cat" src="" width="500px" height="500ox" />
         <h6 id="author"></h6>
       </header>
+
+      <div id="mc_embed_signup">
+        <form action="https://gatech.us21.list-manage.com/subscribe/post?u=fc6ebe6bcd2470dd0224131ac&amp;id=21621326dd&amp;f_id=0069ebe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll"><h2>Daily Cat Pictures!</h2>
+                  <div class="mc-field-group"><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" value="" required=""/></div>
+              <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display: none;"></div>
+                  <div class="response" id="mce-success-response" style="display: none;"></div>
+              </div>
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                <input type="text" name="b_fc6ebe6bcd2470dd0224131ac_21621326dd" tabindex="-1" value=""/>
+              </div>
+              
+              <div class="optionalParent">
+                  <div class="clear foot">
+                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Send me daily cat pictures!"/>
+                  </div>
+              </div>
+            </div>
+          </form>
+      </div>
     </div>
+    
   );
 }
 
