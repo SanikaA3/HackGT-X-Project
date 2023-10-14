@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Fuzzy Bubbles");
 .App {
   text-align: center;
+  font-family: "Fuzzy Bubbles", "sans-serif";
 }
 
 .App-logo {
@@ -12,16 +14,20 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.clearfoot {
+  padding: 10px;
+  margin: 0px;
+}
 .App-header {
-  background-color: #282c34;
+  background-color: #CEEDFA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
 }
 
 .App-link {

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ImageApi from './components/ImageApi';
 import $ from 'jquery';
+import "./new.css";
 
 
 var category = 'inspirational'
@@ -47,7 +48,7 @@ function App() {
       <div id="mc_embed_signup">
         <form action="https://gatech.us21.list-manage.com/subscribe/post?u=fc6ebe6bcd2470dd0224131ac&amp;id=21621326dd&amp;f_id=0069ebe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
             <div id="mc_embed_signup_scroll"><h2>Daily Cat Pictures!</h2>
-                  <div class="mc-field-group"><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" value="" required=""/></div>
+                  <div class="mc-field-group"><input type="email" name="EMAIL" class="required email" id="mce-EMAIL"  placeholder="burdell3@gatech.edu"required=""/></div>
               <div id="mce-responses" class="clear foot">
                   <div class="response" id="mce-error-response" style={{display: 'none'}}></div>
                   <div class="response" id="mce-success-response" style={{display: 'none'}}></div>
@@ -58,7 +59,7 @@ function App() {
               </div>
               
               <div class="optionalParent">
-                  <div class="clear foot">
+                  <div class="clearfoot">
                       <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Send me daily cat pictures!"/>
                   </div>
               </div>
