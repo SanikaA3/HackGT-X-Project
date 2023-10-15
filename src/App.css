@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   font-family: "Fuzzy Bubbles", "sans-serif";
+  background-color: #CEEDFA;
+  background-image: url("dailyCatPicsBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {
@@ -18,7 +22,6 @@
   margin: 0px;
 }
 .App-header {
-  background-color: #CEEDFA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
