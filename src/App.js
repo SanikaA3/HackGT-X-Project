@@ -41,7 +41,7 @@ function App() {
         <h1>Motivational Cat Pics</h1>
         <h3 id="quote"></h3>
         <h5 id="author"></h5>
-        <img id="cat" src="" width="500px" height="500ox" class = "frameBorder"/>
+        <img id="cat" src="" width="350vw" height="350vh" class = "frameBorder"/>
       </header>
 
       <div id="mc_embed_signup">

@@ -8,21 +8,21 @@
 }
 
 h1 {
-  margin: 30px;
+  margin: 5%;
   text-align: left;
 }
 
 h3 {
-  margin: 0px;
+  margin: 0%;
   width: 55%;
 }
 
 h5 {
-  margin: 0px;
+  margin: 0%;
 }
 
 img {
-  margin: 5px;
+  margin: 1%;
 }
 
 .App-logo {
@@ -65,17 +65,18 @@ img {
 
 .button {
   font-family: "Fuzzy Bubbles", "sans-serif";
-  border-radius: 5px;
+  border-radius: 2%;
   width: 15%;
-  height: 20px;
+  height: 40px;
 }
 
 .requiredEmail {
   font-family: "Fuzzy Bubbles", "sans-serif";
   align-items: center;
-  border-radius: 5px;
+  border-radius: 2%;
+  padding: 5px;
   width: 20%;
-  height: 20px;
+  height: 40px;
 }
 
 .frameBorder {
