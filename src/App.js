@@ -4,44 +4,50 @@ import ImageApi from './components/ImageApi';
 import $ from 'jquery';
 
 
-var category = 'inspirational'
-$.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
-    headers: { 'X-Api-Key': 'MuUkhgtCizYq7IyNBzrnkQ==QFFy5AKJHXXD7U01'},
-    contentType: 'application/json',
-    success: function(result) {
-        document.getElementById("quote").innerHTML = "\``" + result[0].quote + "\"";
-        document.getElementById("author").innerHTML = "-" + result[0].author;
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
-});
+// var category = 'inspirational'
+// $.ajax({
+//     method: 'GET',
+//     url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
+//     headers: { 'X-Api-Key': 'MuUkhgtCizYq7IyNBzrnkQ==QFFy5AKJHXXD7U01'},
+//     contentType: 'application/json',
+//     success: function(result) {
+//         document.getElementById("quote").innerHTML = "\``" + result[0].quote + "\"";
+//         document.getElementById("author").innerHTML = "-" + result[0].author;
+//     },
+//     error: function ajaxError(jqXHR) {
+//         console.error('Error: ', jqXHR.responseText);
+//     }
+// });
 
-$.ajax({
-  method: 'GET',
-  url: 'https://api.thecatapi.com/v1/images/search',
-  headers: { 'X-Api-Key': 'live_TCEQ500WZxDwqe7ZPYqHq74Uvt3qE2PpH2Ni0LWEnwkidYH2RD9ZcJboA8t7HZXR'},
-  contentType: 'application/json',
-  success: function(result) {
-      console.log(result[0].url)
-      document.getElementById("cat").src = result[0].url;
-  },
-  error: function ajaxError(jqXHR) {
-      console.error('Error: ', jqXHR.responseText);
-  }
-});
-
-
+// $.ajax({
+//   method: 'GET',
+//   url: 'https://api.thecatapi.com/v1/images/search',
+//   headers: { 'X-Api-Key': 'live_TCEQ500WZxDwqe7ZPYqHq74Uvt3qE2PpH2Ni0LWEnwkidYH2RD9ZcJboA8t7HZXR'},
+//   contentType: 'application/json',
+//   success: function(result) {
+//       console.log(result[0].url)
+//       document.getElementById("cat").src = result[0].url;
+//   },
+//   error: function ajaxError(jqXHR) {
+//       console.error('Error: ', jqXHR.responseText);
+//   }
+// });
+//Updates quote stuff
+const JSON_DATA = require("./quote.json");
+let quote =  "\``" + JSON_DATA.quote + "\"";
+let author = "-" + JSON_DATA.author;
+const IMAGE_DATA = require("./image.json");
+let imageLink = IMAGE_DATA.url;
+;
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
         <h1>Motivational Cat Pics</h1>
-        <h3 id="quote"></h3>
-        <h5 id="author"></h5>
-        <img id="cat" src="" width="500px" height="500ox" class = "frameBorder"/>
+        <h3 id="quote">{quote}</h3>
+        <h5 id="author">{author}</h5>
+        <img id="cat" src={imageLink} width="500px" height="500ox" class = "frameBorder"/>
       </header>
 
       <div id="mc_embed_signup">
