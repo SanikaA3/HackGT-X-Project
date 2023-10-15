@@ -80,20 +80,21 @@ img {
 
 .button {
   font-family: "Fuzzy Bubbles", "sans-serif";
-  border-radius: 2%;
+  border-radius: 2px;
   margin: 0%;
-  width: 15%;
-  height: 40px;
+  width: 22%;
+  height: 30px;
 }
 
 .requiredEmail {
   font-family: "Fuzzy Bubbles", "sans-serif";
   align-items: center;
-  border-radius: 2%;
+  border-radius: 2px;
   margin: 0%;
-  padding: 5px;
+  padding-left: 1%;
+  padding-right: 1%;
   width: 20%;
-  height: 40px;
+  height: 30px;
 }
 
 .frameBorder {
