@@ -7,6 +7,24 @@
   background-size: cover;
 }
 
+h1 {
+  margin: 30px;
+  text-align: left;
+}
+
+h3 {
+  margin: 0px;
+  width: 55%;
+}
+
+h5 {
+  margin: 0px;
+}
+
+img {
+  margin: 5px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -47,11 +65,21 @@
 
 .button {
   font-family: "Fuzzy Bubbles", "sans-serif";
-  float: left;
+  border-radius: 5px;
+  width: 15%;
+  height: 20px;
 }
 
 .requiredEmail {
   font-family: "Fuzzy Bubbles", "sans-serif";
-  float: left;
+  align-items: center;
+  border-radius: 5px;
+  width: 20%;
+  height: 20px;
+}
 
+.frameBorder {
+ border: 59px solid transparent;
+ border-image: url("picFrame.png") 47 stretch;
+ align-items: center;
 }

@@ -11,7 +11,7 @@ $.ajax({
     headers: { 'X-Api-Key': 'MuUkhgtCizYq7IyNBzrnkQ==QFFy5AKJHXXD7U01'},
     contentType: 'application/json',
     success: function(result) {
-        document.getElementById("quote").innerHTML = result[0].quote;
+        document.getElementById("quote").innerHTML = "\``" + result[0].quote + "\"";
         document.getElementById("author").innerHTML = "-" + result[0].author;
     },
     error: function ajaxError(jqXHR) {
@@ -38,10 +38,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Catss!</h1>
+        <h1>Motivational Cat Pics</h1>
         <h3 id="quote"></h3>
-        <img id="cat" src="" width="500px" height="500ox" />
-        <h6 id="author"></h6>
+        <h5 id="author"></h5>
+        <img id="cat" src="" width="500px" height="500ox" class = "frameBorder"/>
       </header>
 
       <div id="mc_embed_signup">
