@@ -46,7 +46,7 @@ function App() {
       <header className="App-header" class="header">
         <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAcvPitsX3Exo6Uslbhr2TONRsNq9ztiDDgimppTnkuDIJugSIsdsx-siocdZiI6ckouHcNwnz7wREM2EDzr5xFWtLy1Q=w1920-h844" width="40vw" class="icon"/>
         <h1> Motivational Cat Pics</h1>
-        <h6>Made by Sanika Ainchwar, Natalie Ajemian, Pranav Murthy, & Ankith Thalanki ❤️</h6>
+        <h6>Made by Sanika Ainchwar, Natalie Ajemian, Pranav Murthy, & Ankith Thalanki ❤️🍞</h6>
       </header>
       <div class="quoteWrapper">
         <h3 id="quote">{quote}</h3>
