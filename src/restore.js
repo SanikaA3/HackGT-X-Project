@@ -1,6 +1,6 @@
 const request = require('request');
 const fs = require('fs');
-var category = 'happiness';
+var category = 'inspirational';
 let value = [];
 request.get({
   url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
