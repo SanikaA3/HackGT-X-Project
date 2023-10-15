@@ -52,11 +52,10 @@ function App() {
         <img id="cat" src={imageLink} width="350vw" height="350vh" class = "frameBorder"/>
       </header>
 
-      <div class="mc_embed_signup">
-        <form action="https://gatech.us21.list-manage.com/subscribe/post?u=fc6ebe6bcd2470dd0224131ac&amp;id=21621326dd&amp;f_id=0069ebe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"/>
-                  <div class="mc-field-group">
-                    <input type="email" name="EMAIL" class="requiredEmail" id="mce-EMAIL"  placeholder="sendmecats@example.com"required=""/>
-                  </div>
+      <div id="mc_embed_signup">
+        <form action="https://gatech.us21.list-manage.com/subscribe/post?u=fc6ebe6bcd2470dd0224131ac&amp;id=21621326dd&amp;f_id=0069ebe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll"><h2>Daily Cat Pictures!</h2>
+                  <div class="mc-field-group"><input type="email" name="EMAIL" class="requiredEmail" id="mce-EMAIL"  placeholder="burdell3@gatech.edu"required=""/></div>
               <div id="mce-responses" class="clear foot">
                   <div class="response" id="mce-error-response" style={{display: 'none'}}></div>
                   <div class="response" id="mce-success-response" style={{display: 'none'}}></div>
@@ -68,10 +67,14 @@ function App() {
               
               <div class="optionalParent">
                   <div class="clearfoot">
-                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe to this site!"/>
+                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Send me daily cat pictures!"/>
                   </div>
               </div>
-        </div>
+            </div>
+          </form>
+      </div>
+
+        
       </div>
     
   );
