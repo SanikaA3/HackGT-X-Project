@@ -43,19 +43,21 @@ function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Motivational Cat Pics</h1>
-        <div class="quoteWrapper">
-          <h3 id="quote">{quote}</h3>
-          <h5 id="author">{author}</h5>
-        </div>
-        <img id="cat" src={imageLink} width="350vw" height="350vh" class = "frameBorder"/>
+      <header className="App-header" class="header">
+        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAcvPitsX3Exo6Uslbhr2TONRsNq9ztiDDgimppTnkuDIJugSIsdsx-siocdZiI6ckouHcNwnz7wREM2EDzr5xFWtLy1Q=w1920-h844" width="40vw" class="icon"/>
+        <h1> Motivational Cat Pics</h1>
+        <h6>Made by Sanika Ainchwar, Natalie Ajemian, Pranav Murthy, & Ankith Thalanki ❤️</h6>
       </header>
+      <div class="quoteWrapper">
+        <h3 id="quote">{quote}</h3>
+        <h5 id="author">{author}</h5>
+      </div>
+      <img id="cat" src={imageLink} width="350vw" height="350vh" class = "frameBorder"/>
 
       <div id="mc_embed_signup">
         <form action="https://gatech.us21.list-manage.com/subscribe/post?u=fc6ebe6bcd2470dd0224131ac&amp;id=21621326dd&amp;f_id=0069ebe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
             <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group"><input type="email" name="EMAIL" class="requiredEmail" id="mce-EMAIL"  placeholder="burdell3@gatech.edu"required=""/></div>
+                  <div class="mc-field-group"><input type="email" name="EMAIL" class="requiredEmail" id="mce-EMAIL"  placeholder="enter your email to subscribe"required=""/></div>
               <div id="mce-responses" class="clear foot">
                   <div class="response" id="mce-error-response" style={{display: 'none'}}></div>
                   <div class="response" id="mce-success-response" style={{display: 'none'}}></div>

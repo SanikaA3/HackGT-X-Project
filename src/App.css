@@ -8,8 +8,9 @@
 }
 
 h1 {
-  margin: 2%;
-  text-align: left;
+  margin: 1%;
+  margin-top: 0%;
+  padding-top: 0%;
 }
 
 h2 {
@@ -25,18 +26,27 @@ h5 {
   margin: 0%;
 }
 
+h6 {
+  margin: 0%;
+  margin-bottom: 1%;
+}
+
+.icon {
+  border-radius: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .quoteWrapper {
   background-color: white;
-  width: 40%;
+  margin-left: 20%;
+  margin-right: 20%;
   border-radius: 10px;
   border-width: 8px;
   border-style: double;
   padding: 10px;
   text-align: center;
-}
-
-img {
-  margin: 1%;
+  margin-bottom: 1%;
 }
 
 .App-logo {
@@ -55,14 +65,21 @@ img {
 }
 
 .App-header {
-  min-height: 70vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   font-family: "Fuzzy Bubbles", "sans-serif";
   color: black;
+}
+
+.header {
+  background-color: #DEFDFF;
+  position: relative;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .App-link {
@@ -80,10 +97,15 @@ img {
 
 .button {
   font-family: "Fuzzy Bubbles", "sans-serif";
+  background-color: #96C8D8;
   border-radius: 2px;
   margin: 0%;
   width: 22%;
   height: 30px;
+}
+
+.button:hover{
+  background-color: #568898;
 }
 
 .requiredEmail {
